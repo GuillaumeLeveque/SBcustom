@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBcustom - Vente d'Extincteurs, Cache-Plaques et Autocollants</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="titreSite">SBcustom - Vente d'Extincteurs, Cache-Plaques et Autocollants</h1>
+    </header>
+    <main>
+        <div class="produit">
+            <img src="extincteur.jpg" alt="Extincteur personnalisé" style="max-width: 300px;">
+            <h2>Extincteur Personnalisé</h2>
+            <p>Extincteur personnalisé pour votre voiture. Choisissez la couleur et le design.</p>
+            <p>Prix : 50€</p>
+            <button class="ajouterAuPanier">Ajouter au Panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="cache_plaque.jpg" alt="Cache-plaque personnalisé" style="max-width: 300px;">
+            <h2>Cache-Plaque Personnalisé</h2>
+            <p>Cache-plaque personnalisé pour votre voiture. Choisissez le style et la couleur.</p>
+            <p>Prix : 20€</p>
+            <button class="ajouterAuPanier">Ajouter au Panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="autocollant.jpg" alt="Autocollant Réseaux Sociaux" style="max-width: 300px;">
+            <h2>Autocollant Réseaux Sociaux</h2>
+            <p>Autocollant pour afficher vos réseaux sociaux sur votre voiture.</p>
+            <p>Prix : 10€</p>
+            <button class="ajouterAuPanier">Ajouter au Panier</button>
+        </div>
+    </main>
+    <aside id="panier">
+        <h2>Panier</h2>
+        <ul id="listePanier"></ul>
+        <p>Total : <span id="totalPrix">0€</span></p>
+        <button id="passerCommande">Passer Commande</button>
+    </aside>
+    <aside id="formulaireCommande" style="display:none;">
+        <h2>Formulaire de Commande</h2>
+        <form id="formulaireContact">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required><br>
+            <button type="submit">Valider la Commande</button>
+        </form>
+    </aside>
+    <footer>
+        <p>&copy; 2023 SBcustom - Vente d'Extincteurs, Cache-Plaques et Autocollants</p>
+    </footer>
+</body>
+</html>
